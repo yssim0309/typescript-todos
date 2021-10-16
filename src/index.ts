@@ -36,11 +36,11 @@ function completeTodo(index: number, todo: Todo): void {
 }
 
 // business logic
-function logFirstTodo() {
+function logFirstTodo(): Todo {
   return todoItems[0];
 }
 
-function showCompleted(): object[] {
+function showCompleted(): Todo[] {
   return todoItems.filter(item => item.done);
 }
 
