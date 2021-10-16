@@ -17,16 +17,16 @@ function fetchTodoItems(): Todo[] {
 }
 
 // crud methods
-function fetchTodos() {
+function fetchTodos(): Todo[] {
   const todos = fetchTodoItems();
   return todos;
 }
 
-function addTodo(todo: Todo) {
+function addTodo(todo: Todo): void {
   todoItems.push(todo);
 }
 
-function deleteTodo(index: number) {
+function deleteTodo(index: number): void {
   todoItems.splice(index, 1);
 }
 
@@ -52,7 +52,7 @@ function addTwoTodoItems(): void {
 }
 
 // NOTE: 유틸 함수
-function log() {
+function log(): void {
   console.log(todoItems);
 }
 
